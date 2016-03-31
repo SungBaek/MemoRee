@@ -1,0 +1,63 @@
+<RelativeLayout
+    android:id="@+id/l"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Category : "
+            />
+        <EditText
+            android:id="@+id/memopad_category"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:inputType="textNoSuggestions"
+            android:maxLength="12"
+            />
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="ColorKey : "/>
+
+        <TextView
+            android:id="@+id/color_box"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#ffedff18"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/memopad"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/info"
+        android:gravity="top|left"/>
+
+</RelativeLayout>
